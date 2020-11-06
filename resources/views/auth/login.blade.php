@@ -16,32 +16,19 @@
         body {
             font-family: 'Inter';
         }
+        .gradient {
+            background: linear-gradient(90deg, #d53369 0%, #daae51 100%);"
+        }
     </style>
 </head>
-<body class="antialiased overflow-hidden">
-<header class="bg-white shadow-lg">
-    <div class="container mx-auto px-6">
-        <nav class="flex flex-col py-2 sm:flex-row sm:justify-between sm:items-center">
-            <div>
-                <a href="#" class="text-2xl font-semibold text-purple-600">Dev Geek</a>
-            </div>
-            <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-            <div class="hidden -mx-4 md:flex md:items-center">
-                <a href="#" class="block mx-4 mt-2 md:mt-0 text-sm text-gray-600 capitalize hover:text-gray-900">Contact</a>
-                <a href="#" class="block mx-4 mt-2 md:mt-0 text-sm text-gray-600 capitalize hover:text-gray-900">About</a>
-            </div>
-        </nav>
-    </div>
-</header>
-<div class="relative min-h-screen flex items-top justify-center bg-gray-300 dark:bg-gray-900 sm:items-center sm:pt-0">
+<body class="antialiased gradient">
+<div class="relative min-h-screen flex items-top justify-center sm:items-center sm:pt-0">
     <div class="container mx-auto">
         <div class="flex items-center flex-col p-6 md:h-128 md:flex-row">
             <div class="md:w-1/2">
-                <img src="{{ asset('img/logo.png') }}" alt="" class="w-32">
-                {{--                    <h2 class="text-4xl font-semibold text-gray-100">Dev Geek</h2>--}}
-
+                <img src="{{ asset('img/undraw_online_transactions_02ka.svg') }}" alt="Logo" class="w-64 mb-6">
                 <h3 class="text-2xl font-semibold text-gray-600">
-                    Customer Credit and Payment <span class="text-purple-600">System</span>
+                    Customer Credit and Payment System
                 </h3>
 
                 <p class="text-gray-600 mt-3">Please enter your login info to access system.</p>
@@ -84,7 +71,6 @@
             </div>
         </div>
     </div>
-
 </div>
 </body>
 </html>
